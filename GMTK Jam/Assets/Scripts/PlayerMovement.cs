@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isJumping;
     void Start()
     {
-
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
@@ -36,4 +36,13 @@ public class PlayerMovement : MonoBehaviour
                 isJumping = false;
             }
         }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        FindStartPos();
+    }
+    void FindStartPos()
+    {
+        transform.position = GameObject.FindWithTag("StartPos").transform.position;
+    }
 }
