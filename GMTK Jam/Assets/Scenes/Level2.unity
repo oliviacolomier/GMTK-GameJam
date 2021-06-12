@@ -673,6 +673,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 3.79
       objectReference: {fileID: 0}
+    - target: {fileID: 3737878720430819981, guid: 126d197533058794aa958029ce26d56b,
+        type: 3}
+      propertyPath: sLeveltoLoad
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4135879387868535615, guid: 126d197533058794aa958029ce26d56b,
         type: 3}
       propertyPath: m_Name
