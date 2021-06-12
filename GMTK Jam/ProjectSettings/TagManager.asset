@@ -5,8 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
-  - StartPos
+  - Blue
   - Yellow
+  - Green
+  - StartPos
+
   layers:
   - Default
   - TransparentFX
