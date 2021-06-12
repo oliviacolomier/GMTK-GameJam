@@ -508,6 +508,57 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1194449324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1902000168747110151, guid: ce56ba656ab993e4daeb0773d297cef9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1215769126749898520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1194449325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194449324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4a1b8ee64b4954594606129c5f1138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iLeveltoLoad: 0
+  sLeveltoLoad: Tutorial
+  useIntegerToLoadLevel: 0
+--- !u!1 &1340984605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1340984606}
+  m_Layer: 0
+  m_Name: StartPosition
+  m_TagString: StartPos
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1340984606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340984605}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.16, y: -1.44, z: -0.83005583}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1341611414
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,8 +860,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2079133108}
   - component: {fileID: 2079133109}
+  - component: {fileID: 2079133111}
+  - component: {fileID: 2079133110}
   m_Layer: 0
-  m_Name: DoorModel
+  m_Name: LevelLoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -824,7 +877,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079133107}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.08, y: -1.33, z: 63.397533}
+  m_LocalPosition: {x: 3.81, y: -1.39, z: 63.397533}
   m_LocalScale: {x: 1.4234, y: 3.1877, z: 1}
   m_Children: []
   m_Father: {fileID: 1994149300}
@@ -882,6 +935,47 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2079133110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079133107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4a1b8ee64b4954594606129c5f1138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iLeveltoLoad: 0
+  sLeveltoLoad: Level1
+  useIntegerToLoadLevel: 0
+--- !u!61 &2079133111
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079133107}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.009793371}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.98041326}
+  m_EdgeRadius: 0
 --- !u!1001 &1215769126749898520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1104,6 +1198,11 @@ PrefabInstance:
     - target: {fileID: 8202569908686473802, guid: 35c203a34b815cf4f8ce1a884d07f0f5,
         type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202569908686473802, guid: 35c203a34b815cf4f8ce1a884d07f0f5,
+        type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8202569908686473812, guid: 35c203a34b815cf4f8ce1a884d07f0f5,
