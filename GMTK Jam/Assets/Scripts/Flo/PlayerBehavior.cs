@@ -19,7 +19,7 @@ public class PlayerBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("coucou");
                 spwanSoul();
@@ -27,7 +27,7 @@ public class PlayerBehavior : MonoBehaviour
             }
         if (soulIsActive && Input.GetKeyDown(KeyCode.G))
         {
-            switchControl();
+            SwitchControl();
         }
            
         else
@@ -38,32 +38,33 @@ public class PlayerBehavior : MonoBehaviour
     void spwanSoul() {
         if (!soulIsActive)
         {
+            SwitchControl();
             soulPlayer.SetActive(true);
             soulPlayer.transform.position = bodyPlayer.transform.position;
             soulIsActive = true;
         }
         else if(soulIsActive)
         {
-            if (selectedControl == "body")
+            if (selectedControl == "ghost")
             {
-                switchControl();
+                SwitchControl();
             }
             soulPlayer.SetActive(false);
             soulIsActive = false;
         }
     }
 
-    void switchControl() {
+    void SwitchControl() {
         if (selectedControl == "body")
         {
             bodyPlayer.GetComponent<BodyBehavior>().CanMove = false;
-            soulPlayer.GetComponent<BodyBehavior>().CanMove = true;
+            soulPlayer.GetComponent<GhostBehavior>().CanMove = true;
             selectedControl = "ghost";
         }
         else if (selectedControl == "ghost")
         {
             bodyPlayer.GetComponent<BodyBehavior>().CanMove = true;
-            soulPlayer.GetComponent<BodyBehavior>().CanMove = false;
+            soulPlayer.GetComponent<GhostBehavior>().CanMove = false;
             selectedControl = "body";
         }
     }
