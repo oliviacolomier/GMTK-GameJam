@@ -8,6 +8,7 @@ public class BodyBehavior : MonoBehaviour
     public Rigidbody2D rigidbody2d;
     public float jumpVelocity = 10f;
     private bool isJumping;
+    
     private bool canJump;
     public bool CanJump
     {
@@ -20,22 +21,38 @@ public class BodyBehavior : MonoBehaviour
             canJump = value;
         }
     }
+
+    private bool canMove;
+    public bool CanMove
+    {
+        get 
+        {
+            return canMove;
+        }
+        set
+        {
+            canMove = value;
+        }
+    }
     void Start()
     {
         gameObject.tag = "Green";
+        canJump = true;
+        canMove = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-         var movement = Input.GetAxis("Horizontal");
-        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
-        if (Input.GetKeyDown(KeyCode.Space) && !isJumping && canJump)
+        if(canMove)
         {
-          
-            rigidbody2d.velocity = Vector2.up * jumpVelocity;
-            isJumping = true;
-
+            var movement = Input.GetAxis("Horizontal");
+            transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+            if (Input.GetKeyDown(KeyCode.Space) && !isJumping && canJump)
+            {
+                rigidbody2d.velocity = Vector2.up * jumpVelocity;
+                isJumping = true;
+            }
         }
 
         if (gameObject.tag == "Yellow")

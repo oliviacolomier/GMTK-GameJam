@@ -26,9 +26,10 @@ public class PlayerBehavior : MonoBehaviour
                 bodyPlayer.tag = "Yellow";
             }
         if (soulIsActive && Input.GetKeyDown(KeyCode.G))
+        {
             switchControl();
-        if(soulIsActive)
-            bodyPlayer.GetComponent<BodyBehavior>().CanJump = false;
+        }
+           
         else
             bodyPlayer.GetComponent<BodyBehavior>().CanJump = true;
 
@@ -43,6 +44,10 @@ public class PlayerBehavior : MonoBehaviour
         }
         else if(soulIsActive)
         {
+            if (selectedControl == "body")
+            {
+                switchControl();
+            }
             soulPlayer.SetActive(false);
             soulIsActive = false;
         }
@@ -51,10 +56,14 @@ public class PlayerBehavior : MonoBehaviour
     void switchControl() {
         if (selectedControl == "body")
         {
+            bodyPlayer.GetComponent<BodyBehavior>().CanMove = false;
+            soulPlayer.GetComponent<BodyBehavior>().CanMove = true;
             selectedControl = "ghost";
         }
         else if (selectedControl == "ghost")
         {
+            bodyPlayer.GetComponent<BodyBehavior>().CanMove = true;
+            soulPlayer.GetComponent<BodyBehavior>().CanMove = false;
             selectedControl = "body";
         }
     }
