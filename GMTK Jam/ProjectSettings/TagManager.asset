@@ -8,6 +8,8 @@ TagManager:
   - Blue
   - Yellow
   - Green
+  - StartPos
+
   layers:
   - Default
   - TransparentFX
