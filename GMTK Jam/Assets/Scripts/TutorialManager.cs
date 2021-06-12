@@ -28,7 +28,13 @@ public class TutorialManager : MonoBehaviour
         }
         if(popUpIndex == 0)
         {
-            if(Input.GetKeyDown(KeyCode.A)|| Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+            {
+            
+                    popUpIndex++;
+
+            }
+            else if(Input.GetKeyDown(KeyCode.E))
             {
                 popUpIndex++;
             }
