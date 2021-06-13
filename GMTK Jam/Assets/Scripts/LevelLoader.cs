@@ -25,7 +25,7 @@ public class LevelLoader : MonoBehaviour
     {
         GameObject collisionGameObject = collision.gameObject;
 
-        if (collisionGameObject.tag == "Green" || collisionGameObject.tag == "Yellow")
+        if (collisionGameObject.tag == "Green")
         {
             LoadScene();
         }
