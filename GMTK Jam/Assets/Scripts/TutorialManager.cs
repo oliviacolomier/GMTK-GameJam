@@ -26,15 +26,15 @@ public class TutorialManager : MonoBehaviour
                 popUps[i].SetActive(false);
             }
         }
-        if(popUpIndex == 0)
+        if (popUpIndex == 0)
         {
             if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
             {
-            
-                    popUpIndex++;
+
+                popUpIndex++;
 
             }
-            else if(Input.GetKeyDown(KeyCode.E))
+            else if (Input.GetKeyDown(KeyCode.E))
             {
                 popUpIndex++;
             }
@@ -42,15 +42,38 @@ public class TutorialManager : MonoBehaviour
         }
         else if (popUpIndex == 1)
         {
-            if(Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 popUpIndex++;
             }
-            else if(Input.GetKeyDown(KeyCode.G))
+
+            else if (Input.GetKeyDown(KeyCode.W))
             {
                 popUpIndex++;
             }
         }
-        
+        else if (popUpIndex == 2)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                popUpIndex++;
+            }
+            else if (Input.GetKeyDown(KeyCode.G))
+            {
+                popUpIndex++;
+            }
+        }
+        else if (popUpIndex == 3)
+        {
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+                popUpIndex++;
+        }
+        else if (popUpIndex == 4)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+                popUpIndex++;
+        }
+
+
     }
 }
