@@ -46,6 +46,10 @@ public class TutorialManager : MonoBehaviour
             {
                 popUpIndex++;
             }
+            else if(Input.GetKeyDown(KeyCode.G))
+            {
+                popUpIndex++;
+            }
         }
         
     }
