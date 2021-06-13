@@ -24,8 +24,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619967186803321848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.079121, y: 0.17754, z: 0}
+  m_LocalScale: {x: 0.49586, y: 0.49586, z: 0.49586}
   m_Children:
   - {fileID: 278582242937627461}
   m_Father: {fileID: 0}
@@ -58,8 +58,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2857332761743903137}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.09, y: 0.15, z: 0}
+  m_LocalScale: {x: 0.35609543, y: 0.3795653, z: 1}
   m_Children: []
   m_Father: {fileID: 5219150086255939804}
   m_RootOrder: 0
@@ -104,13 +104,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: fb2c3278126c43f46b27f0b384f87ac5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -129,18 +128,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.004072666, y: -0.09228134}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    border: {x: 7.06, y: 2.6, z: 7.33, w: 2.3899999}
+    pivot: {x: 0.4902089, y: 0.45068178}
+    oldSize: {x: 19.2, y: 10.8}
+    newSize: {x: 19.2, y: 10.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 5.425378, y: 7.0027485}
   m_EdgeRadius: 0
 --- !u!114 &4614427057674976857
 MonoBehaviour:
@@ -156,3 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   torchModel: {fileID: 7581500141955664023}
   torchCollider: {fileID: 1390777979101800800}
+  whiteTorch: {fileID: 21300000, guid: fb2c3278126c43f46b27f0b384f87ac5, type: 3}
+  yellowTorch: {fileID: 21300000, guid: 3b65a43e0a52a2c4abe241f5d0a62477, type: 3}
+  blueTorch: {fileID: 21300000, guid: 6ad01b30df4546d4a8f3d93abea7535d, type: 3}
+  greenTorch: {fileID: 21300000, guid: 41fbb345505545446a881408e79ec1a2, type: 3}

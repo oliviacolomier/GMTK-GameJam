@@ -6,6 +6,11 @@ public class TorchBehavior : MonoBehaviour
 {
     public SpriteRenderer torchModel;
     public Collider2D torchCollider;
+
+    public Sprite whiteTorch;
+    public Sprite yellowTorch;
+    public Sprite blueTorch;
+    public Sprite greenTorch;
     void Start()
     {
         if (gameObject.tag == "Untagged")
@@ -47,11 +52,11 @@ public class TorchBehavior : MonoBehaviour
     void changeColor(string currentTag)
     {
     if (currentTag == "Blue")
-        torchModel.color = Color.blue;
+        torchModel.sprite = blueTorch;
     else if (currentTag == "Yellow")
-        torchModel.color = Color.yellow;
+        torchModel.sprite = yellowTorch;
     else if (currentTag == "Green")
-        torchModel.color = Color.green;
+        torchModel.sprite = greenTorch;
     }
 }
 
