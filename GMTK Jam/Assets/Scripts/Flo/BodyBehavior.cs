@@ -68,7 +68,17 @@ public class BodyBehavior : MonoBehaviour
             {
                 isJumping = false;
             }
-            if(other.collider.tag == gameObject.tag)
+           if(other.collider.tag == gameObject.tag)
                 other.collider.enabled = false;
         }
+
+    void OnLevelWasLoaded(int level)
+    {
+        FindStartPos();
+    }
+
+    void FindStartPos()
+    {
+        transform.position = GameObject.FindWithTag("StartPos").transform.position;
+    }
 }

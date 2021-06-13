@@ -797,6 +797,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6722544067578872282, guid: 126d197533058794aa958029ce26d56b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8557265365747754911, guid: 126d197533058794aa958029ce26d56b,
         type: 3}
       propertyPath: m_RootOrder
@@ -878,7 +883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iLeveltoLoad: 0
-  sLeveltoLoad: 
+  sLeveltoLoad: Level3
   useIntegerToLoadLevel: 0
 --- !u!1 &2101648935
 GameObject:

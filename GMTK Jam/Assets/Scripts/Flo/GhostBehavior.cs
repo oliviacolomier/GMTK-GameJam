@@ -27,13 +27,13 @@ public class GhostBehavior : MonoBehaviour
     {
         gameObject.tag = "Blue";
         canMove = true;
-        GameObject body;
+        //GameObject body;
 
-        if(GameObject.FindGameObjectWithTag("Yellow"))
-        {
-            body = GameObject.FindGameObjectWithTag("Yellow");
-            Physics2D.IgnoreCollision(body.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-        }
+        //if(GameObject.FindGameObjectWithTag("Yellow"))
+        //{
+        //    body = GameObject.FindGameObjectWithTag("Yellow");
+        //    Physics2D.IgnoreCollision(body.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        //}
     }
 
     // Update is called once per frame
