@@ -9,11 +9,13 @@ TagManager:
   - Yellow
   - Green
   - StartPos
+  - White
+  - Other
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - BG
+  - 
   - Water
   - UI
   - 
@@ -43,9 +45,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: BG
-    uniqueID: 1076140839
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

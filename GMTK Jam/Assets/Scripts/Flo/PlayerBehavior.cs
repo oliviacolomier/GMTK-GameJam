@@ -25,17 +25,16 @@ public class PlayerBehavior : MonoBehaviour
             {
                 Debug.Log("coucou");
                 spwanSoul();
-                bodyPlayer.tag = "Yellow";
+                if (bodyPlayer.tag == "Yellow")
+                    bodyPlayer.tag = "Green";
+                else if (bodyPlayer.tag == "Green")
+                    bodyPlayer.tag = "Yellow";
                 SoundManager.Playsound("SplitandFusion");
             }
         if (soulIsActive && Input.GetKeyDown(KeyCode.G))
         {
             SwitchControl();
         }
-           
-        else
-            bodyPlayer.GetComponent<BodyBehavior>().CanJump = true;
-
     }
 
     void spwanSoul() {
@@ -45,6 +44,7 @@ public class PlayerBehavior : MonoBehaviour
             soulPlayer.SetActive(true);
             soulPlayer.transform.position = bodyPlayer.transform.position;
             soulIsActive = true;
+            bodyPlayer.GetComponent<BodyBehavior>().CanJump = false;
         }
         else if(soulIsActive)
         {
@@ -54,6 +54,8 @@ public class PlayerBehavior : MonoBehaviour
             }
             soulPlayer.SetActive(false);
             soulIsActive = false;
+            bodyPlayer.GetComponent<BodyBehavior>().CanJump = true;
+
         }
     }
 
