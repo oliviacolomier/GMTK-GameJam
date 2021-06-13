@@ -69,4 +69,15 @@ public class BodyBehavior : MonoBehaviour
                 isJumping = false;
             }
         }
+
+    void OnLevelWasLoaded(int level)
+    {
+        FindStartPos();
+    }
+    void FindStartPos()
+    {
+        transform.position = GameObject.FindWithTag("StartPos").transform.position;
+    }
+
+
 }

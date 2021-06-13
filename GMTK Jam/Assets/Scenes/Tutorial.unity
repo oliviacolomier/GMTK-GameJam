@@ -276,6 +276,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 175988899560557896, guid: 9f3f2b868a43fc447ab46f8cbcd9b7c3,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 175988899560557896, guid: 9f3f2b868a43fc447ab46f8cbcd9b7c3,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 226665327
+      objectReference: {fileID: 0}
     - target: {fileID: 175988899560557897, guid: 9f3f2b868a43fc447ab46f8cbcd9b7c3,
         type: 3}
       propertyPath: MovementSpeed
@@ -390,6 +400,16 @@ PrefabInstance:
         type: 3}
       propertyPath: MovementSpeed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 175988900483429174, guid: 9f3f2b868a43fc447ab46f8cbcd9b7c3,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 175988900483429174, guid: 9f3f2b868a43fc447ab46f8cbcd9b7c3,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 226665327
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 175988899560557902, guid: 9f3f2b868a43fc447ab46f8cbcd9b7c3, type: 3}
