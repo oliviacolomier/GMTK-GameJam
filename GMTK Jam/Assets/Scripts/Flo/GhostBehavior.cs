@@ -6,6 +6,7 @@ public class GhostBehavior : MonoBehaviour
 {
     public float MovementSpeed = 1;
     private bool canMove;
+
     
    
 
@@ -26,6 +27,8 @@ public class GhostBehavior : MonoBehaviour
     {
         gameObject.tag = "Blue";
         canMove = true;
+
+
 
         GameObject body = GameObject.FindGameObjectWithTag("Yellow");
         Physics2D.IgnoreCollision(body.GetComponent<Collider2D>(), GetComponent<Collider2D>());
