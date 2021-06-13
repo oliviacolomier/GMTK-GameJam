@@ -5,7 +5,7 @@ using UnityEngine;
 public class GhostMovement : MonoBehaviour
 {
     
-    public float MovementSpeed = 1;
+    public float MovementSpeed = 2;
     // Start is called before the first frame update
     void Start()
     {

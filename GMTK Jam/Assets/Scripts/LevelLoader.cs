@@ -25,7 +25,7 @@ public class LevelLoader : MonoBehaviour
     {
         GameObject collisionGameObject = collision.gameObject;
 
-        if (collisionGameObject.name == "Player")
+        if (collisionGameObject.tag == "Player")
         {
             LoadScene();
         }

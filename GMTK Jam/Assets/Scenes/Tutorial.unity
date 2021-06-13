@@ -131,6 +131,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 175988899560557897, guid: 9f3f2b868a43fc447ab46f8cbcd9b7c3,
+        type: 3}
+      propertyPath: MovementSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 175988899560557903, guid: 9f3f2b868a43fc447ab46f8cbcd9b7c3,
         type: 3}
       propertyPath: m_TagString
@@ -206,10 +211,20 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Yellow
       objectReference: {fileID: 0}
+    - target: {fileID: 175988900483429169, guid: 9f3f2b868a43fc447ab46f8cbcd9b7c3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.93
+      objectReference: {fileID: 0}
     - target: {fileID: 175988900483429172, guid: 9f3f2b868a43fc447ab46f8cbcd9b7c3,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.87
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 175988900483429173, guid: 9f3f2b868a43fc447ab46f8cbcd9b7c3,
+        type: 3}
+      propertyPath: jumpVelocity
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 175988900483429173, guid: 9f3f2b868a43fc447ab46f8cbcd9b7c3,
         type: 3}
@@ -771,7 +786,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
