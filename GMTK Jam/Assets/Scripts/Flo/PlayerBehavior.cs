@@ -14,6 +14,8 @@ public class PlayerBehavior : MonoBehaviour
         soulPlayer.SetActive(false);
         soulIsActive = false;
         selectedControl = "body";
+
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
