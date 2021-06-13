@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press E again to become human
+  m_text: Press E to become human
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1bf1fa38c244cce43aa7f40107a4c636, type: 2}
   m_sharedMaterial: {fileID: -8712927835992119926, guid: 1bf1fa38c244cce43aa7f40107a4c636,
