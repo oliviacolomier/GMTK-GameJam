@@ -9,7 +9,8 @@ TagManager:
   - Yellow
   - Green
   - StartPos
-
+  - White
+  - Other
   layers:
   - Default
   - TransparentFX

@@ -57,7 +57,7 @@ public class BodyBehavior : MonoBehaviour
 
         if (gameObject.tag == "Yellow")
             gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
-        else
+        else if (gameObject.tag == "Green")
             gameObject.GetComponent<SpriteRenderer>().color = Color.green;
 
     }
@@ -68,7 +68,5 @@ public class BodyBehavior : MonoBehaviour
             {
                 isJumping = false;
             }
-            if(other.collider.tag == gameObject.tag)
-                other.collider.enabled = false;
         }
 }

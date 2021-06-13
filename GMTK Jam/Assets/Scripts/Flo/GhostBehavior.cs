@@ -27,13 +27,13 @@ public class GhostBehavior : MonoBehaviour
     {
         gameObject.tag = "Blue";
         canMove = true;
-        GameObject body;
+        // GameObject body;
 
-        if(GameObject.FindGameObjectWithTag("Yellow"))
-        {
-            body = GameObject.FindGameObjectWithTag("Yellow");
-            Physics2D.IgnoreCollision(body.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-        }
+        // if(GameObject.FindGameObjectWithTag("Yellow"))
+        // {
+        //     body = GameObject.FindGameObjectWithTag("Yellow");
+        //     Physics2D.IgnoreCollision(body.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        // }
     }
 
     // Update is called once per frame
@@ -45,15 +45,6 @@ public class GhostBehavior : MonoBehaviour
             var verticalMovement = Input.GetAxis("Vertical");
             transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
             transform.position += new Vector3(0,verticalMovement,0) * Time.deltaTime * MovementSpeed;
-          
         }
-    }
-    void OnCollisionEnter2D(Collision2D other) 
-    {
-        if(other.collider.tag == gameObject.tag)
-           other.collider.enabled = false;
-
-       
-
     }
 }
