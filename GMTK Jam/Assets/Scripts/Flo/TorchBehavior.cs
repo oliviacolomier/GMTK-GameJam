@@ -10,12 +10,14 @@ public class TorchBehavior : MonoBehaviour
     {
         if (gameObject.tag == "Untagged")
             gameObject.tag = "White";
+        else
+            changeColor(gameObject.tag);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
 
@@ -36,14 +38,21 @@ public class TorchBehavior : MonoBehaviour
         if(gameObject.tag == "White")
         {
             gameObject.tag = other.tag;
-            if (other.tag == "Blue")
-                torchModel.color = Color.blue;
-            else if (other.tag == "Yellow")
-                torchModel.color = Color.yellow;
-            else if (other.tag == "Green")
-                torchModel.color = Color.green;
+            changeColor(other.tag);
             torchCollider.isTrigger = false;    
         } else if (gameObject.tag != other.tag)
             torchCollider.isTrigger = false;
     }
+
+    void changeColor(string currentTag)
+    {
+    if (currentTag == "Blue")
+        torchModel.color = Color.blue;
+    else if (currentTag == "Yellow")
+        torchModel.color = Color.yellow;
+    else if (currentTag == "Green")
+        torchModel.color = Color.green;
+    }
 }
+
+
