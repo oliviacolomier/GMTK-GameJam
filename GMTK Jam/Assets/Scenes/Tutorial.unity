@@ -2071,6 +2071,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3603829354113307408, guid: 5dba1a755a29b5e4abbb8602c7b2691a,
         type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603829354113307408, guid: 5dba1a755a29b5e4abbb8602c7b2691a,
+        type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 1
       objectReference: {fileID: 0}
@@ -2143,12 +2148,12 @@ PrefabInstance:
     - target: {fileID: 3603829354113307410, guid: 5dba1a755a29b5e4abbb8602c7b2691a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2287
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 3603829354113307410, guid: 5dba1a755a29b5e4abbb8602c7b2691a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.6922
+      value: -3.72
       objectReference: {fileID: 0}
     - target: {fileID: 5526487395820888186, guid: 5dba1a755a29b5e4abbb8602c7b2691a,
         type: 3}
@@ -2460,3 +2465,77 @@ PrefabInstance:
       objectReference: {fileID: 266872743}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2051ad8663bf944db6cb2de13d5b28e, type: 3}
+--- !u!1001 &8501264145093053165
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1372166928768021771, guid: a8c008e2d74112e4fb76af0af7aae036,
+        type: 3}
+      propertyPath: m_Name
+      value: Background (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495531366243845565, guid: a8c008e2d74112e4fb76af0af7aae036,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495531366243845565, guid: a8c008e2d74112e4fb76af0af7aae036,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.44864997
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495531366243845565, guid: a8c008e2d74112e4fb76af0af7aae036,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.2141
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495531366243845565, guid: a8c008e2d74112e4fb76af0af7aae036,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.608
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495531366243845565, guid: a8c008e2d74112e4fb76af0af7aae036,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495531366243845565, guid: a8c008e2d74112e4fb76af0af7aae036,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495531366243845565, guid: a8c008e2d74112e4fb76af0af7aae036,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495531366243845565, guid: a8c008e2d74112e4fb76af0af7aae036,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495531366243845565, guid: a8c008e2d74112e4fb76af0af7aae036,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495531366243845565, guid: a8c008e2d74112e4fb76af0af7aae036,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495531366243845565, guid: a8c008e2d74112e4fb76af0af7aae036,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495531366243845565, guid: a8c008e2d74112e4fb76af0af7aae036,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a8c008e2d74112e4fb76af0af7aae036, type: 3}
