@@ -24,6 +24,7 @@ public class PlayerBehavior : MonoBehaviour
                 Debug.Log("coucou");
                 spwanSoul();
                 bodyPlayer.tag = "Yellow";
+                SoundManager.Playsound("SplitandFusion");
             }
         if (soulIsActive && Input.GetKeyDown(KeyCode.G))
         {
